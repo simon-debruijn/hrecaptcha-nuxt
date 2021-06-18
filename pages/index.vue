@@ -5,20 +5,13 @@
       <input type="email" name="email" id="email" />
       <label for="agree">Agree</label>
       <input type="checkbox" name="agree" id="agree" />
-      <button
-        type="submit"
-        class="h-captcha"
-        data-sitekey="your_site_key"
-        data-callback="onSubmit"
-      >
-        Subscribe
-      </button>
+      <button type="submit">Subscribe</button>
       <small>
         This site is protected by hCaptcha and its
         <a href="https://hcaptcha.com/privacy">Privacy Policy</a> and
         <a href="https://hcaptcha.com/terms">Terms of Service</a> apply.
       </small>
-      <!-- <vue-hcaptcha
+      <vue-hcaptcha
         ref="invisibleHcaptcha"
         :sitekey="hcaptchaKey"
         language="nl"
@@ -27,7 +20,7 @@
         @expired="onExpire"
         @challengeExpired="onExpire"
         @error="onError"
-      ></vue-hcaptcha> -->
+      ></vue-hcaptcha>
     </form>
   </div>
 </template>
